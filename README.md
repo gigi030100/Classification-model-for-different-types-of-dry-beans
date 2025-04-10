@@ -20,3 +20,32 @@ Histograms also illustrated the non-normal distribution of each class of dry bea
 The dry beans "class" column was relabelled via label encoding as ML models require numerical variables. 
 
 ### Feature selection
+A correlation plot was used to determine highly positive correlation features of the dry beans classes. Fetures that have 0.9 correlation score were removed to minimise model overfitting. 
+
+## Developing Supper Vector Machine model
+Dry beans cleaned dataset was split into training and testing set by a ratio of 80:20 respectively. The training set was furter split into training and validation set by a ratio of 90:10 respectively. Thus, we have training, validation, and testing data subsets. Default hyperparameters of the SVM model from the sklearn library was used (see Table 1). 
+
+<img width="492" alt="Screenshot 2025-04-10 at 16 23 48" src="https://github.com/user-attachments/assets/046c93ac-bb62-40c7-ba91-88a52f605fc5" />
+
+### SVM model evaluation
+F1 score and the confusion matrix was used to assess predictive performance. 
+
+The performance of the SVM model with default hyperparameter value was evaluated on the validation set first to avoid overfitting. Hyperparameter values were then tuned using the training set to find the optimal combination of hyperparameter values using GridSearchCV with a 10-fold cross validation. Table 3 shows the range of hyperparameter values in the search space. 
+
+Table 3:
+
+<img width="748" alt="Screenshot 2025-04-10 at 16 32 25" src="https://github.com/user-attachments/assets/e511869c-6e02-4655-a2bb-ea04de810c41" />
+
+Upon finding the optimal combination of hyperparameter values, these values were then trained on the a combination of training and validation dataset to ensure new model is trained on unseen data and reduce overfitting. This optimised model was then evaluated on the testing dataset.
+
+## Results
+The model exhibited an average f1 score of 0.95
+
+
+<img width="826" alt="Screenshot 2025-04-10 at 16 35 57" src="https://github.com/user-attachments/assets/d4a13c77-7aaa-473c-866f-9e0151805b51" />
+
+
+
+
+
+
