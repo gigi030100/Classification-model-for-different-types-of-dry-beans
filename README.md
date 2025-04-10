@@ -44,6 +44,12 @@ The model exhibited an average f1 score of 0.95
 
 <img width="826" alt="Screenshot 2025-04-10 at 16 35 57" src="https://github.com/user-attachments/assets/d4a13c77-7aaa-473c-866f-9e0151805b51" />
 
+After tuning the model's hyperparameters, the general performance of the model remained unchanged of having 0.95 f1-score. Table 6 shows the confusion matrix after tuning hyperparameters. 
+
+<img width="974" alt="Screenshot 2025-04-10 at 16 46 46" src="https://github.com/user-attachments/assets/57f9d54a-f822-402a-956e-b6846288eb53" />
+
+## Discussion
+
 
 
 
