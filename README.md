@@ -48,7 +48,8 @@ After tuning the model's hyperparameters, the general performance of the model r
 
 <img width="974" alt="Screenshot 2025-04-10 at 16 46 46" src="https://github.com/user-attachments/assets/57f9d54a-f822-402a-956e-b6846288eb53" />
 
-## Discussion
+## Conclusion
+Based on results, hyperparameter tuning in this instance did not prove its usefulness as performance remained the same for both models with default and tuned hyperparameters. It's worth noting that a possible reason that the minority class of beans (Bombay) had 100% in predictive score was due to the SMOTE technique which has the propensity to overfit predictions. 
 
 
 
